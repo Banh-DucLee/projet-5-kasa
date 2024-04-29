@@ -1,0 +1,30 @@
+@import 'variables';
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h1 {
+        margin-top: 50px;
+        font-size: 288px;
+        font-weight: 700;
+        color: $color-red;
+    }
+
+    h2 {
+        margin-top: 50px;
+        font-size: 36px;
+        font-weight: 500;
+        color: $color-red;
+    }
+
+    a {
+        margin: 50px 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        text-decoration: underline;
+    }
+}
