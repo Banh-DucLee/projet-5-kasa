@@ -1,5 +1,12 @@
+/* ----- Variables ----- */
 // Font url
 $montserrat-font-url: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
 
 // Color
 $color-red: #FF6060;
+
+// Breakpoints
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 768px;
+
+/* ----- Mixins ----- */
