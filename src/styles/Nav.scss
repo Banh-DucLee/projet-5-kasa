@@ -1,9 +1,16 @@
+@import 'variables';
+
 header {
     margin: 45px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 68px;
+
+    img {
+        width: clamp(9.063rem, 6.103vw + 7.632rem, 13.125rem);
+        height: auto;
+    }
 
     nav {
         display: flex;
@@ -12,15 +19,32 @@ header {
         max-width: 309px;
 
         a {
-            font-size: 24px;
-            font-weight: 500;
+            font-size: clamp(0.75rem, 0.4859rem + 1.1268vw, 1.5rem);            font-weight: 500;
             color: black;
             text-decoration: none;
+
+            @media (width <= $breakpoint-mobile) {
+                text-transform: uppercase;
+            }
         }
         
         .active {
             text-decoration: underline;
         }
 
+        @media (width <= $breakpoint-mobile) {
+            justify-content: end;
+            gap: 15%;
+        }
+
+    }
+
+    @media (width < $breakpoint-tablet) {
+        margin: 45px 50px;
+    }
+
+    @media (width <= $breakpoint-mobile) {
+        margin: 20px;
+        gap: 5%;
     }
 }
