@@ -10,3 +10,14 @@ $breakpoint-tablet: 1024px;
 $breakpoint-mobile: 768px;
 
 /* ----- Mixins ----- */
+@mixin responsivePadding {
+    padding: clamp(1.25rem, 2.347vw + 0.7rem, 2.813rem) clamp(1.25rem, 7.512vw - 0.511rem, 6.25rem);
+}
+
+@mixin responsiveHorizontalMargin {
+    margin-inline: clamp(1.25rem, 7.512vw - 0.511rem, 6.25rem);
+}
+
+@mixin responsiveTopMargin {
+    margin-top: clamp(1.25rem, 2.347vw + 0.7rem, 2.813rem);
+}
