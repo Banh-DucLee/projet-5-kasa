@@ -1,0 +1,7 @@
+@import 'variables';
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    @include responsivePadding;
+}
