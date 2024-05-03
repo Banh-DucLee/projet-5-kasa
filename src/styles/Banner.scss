@@ -1,0 +1,41 @@
+@import 'variables';
+.banner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: clamp(6.938rem, 10.516vw + 4.473rem, 13.938rem);
+    overflow: hidden;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+
+    .darkenLayer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    h2 {
+        z-index: 1;
+        padding: 15px;
+        align-self: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        color: white;
+        font-size: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
+        
+        br {
+            display: none;
+
+            @media (width <= $breakpoint-mobile) {
+                display: block;
+            }
+        }
+
+        @media (width <= $breakpoint-mobile) {
+            text-align: start;
+        }
+    }
+}
