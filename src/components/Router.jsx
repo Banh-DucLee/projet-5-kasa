@@ -5,12 +5,14 @@ import ErrorPage from '../pages/404/ErrorPage';
 import AboutPage from '../pages/About/AboutPage';
 import HousingPage from '../pages/Housing/HousingPage';
 import Root from './Root';
+import Nav from './Nav';
+import Footer from './Footer';
 
 const router = createBrowserRouter([
   { 
     path: '/',
     element: <Root />,
-    errorElement: <ErrorPage />,
+    errorElement: <><Nav /><ErrorPage /><Footer /></>,
     children: [
       {
         path: '',
