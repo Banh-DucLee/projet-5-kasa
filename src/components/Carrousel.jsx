@@ -10,7 +10,7 @@ function Carrousel({images}) {
     return (
         <div className="carrousel-container">
             <div className="carrousel-image">
-                <img className="active-image" src={images[activeImage]} alt="carrousel-image" />
+                <img className="active-image" src={images[activeImage]} alt="Housing" />
             </div>
             <div className={`${images.length === 1 ? 'hide' : 'carrousel-controls'}`}>
                 <div className="carrousel-control-button">
@@ -22,7 +22,7 @@ function Carrousel({images}) {
                             setActiveImage(activeImage - 1);
                         }
                         }}>
-                        <img src={arrowImage} alt="previous-arrow" />
+                        <img src={arrowImage} alt="Previous arrow" />
                     </button>
                     <button className="carrousel-control-button-next" onClick={() => 
                         {
@@ -32,7 +32,7 @@ function Carrousel({images}) {
                             setActiveImage(activeImage + 1);
                         }
                         }}>
-                        <img src={arrowImage} alt="previous-arrow" />
+                        <img src={arrowImage} alt="Next arrow" />
                     </button>
                 </div>
                 <div className="carrousel-indicators">
