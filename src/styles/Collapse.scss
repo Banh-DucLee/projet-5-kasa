@@ -47,7 +47,7 @@
         p {
             margin: 0;
             padding: 16px;
-            font-size: 18px;
+            font-size: clamp(0.875rem, 0.376vw + 0.787rem, 1.125rem);
         }
 
         &.show {
