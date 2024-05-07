@@ -29,3 +29,9 @@ $breakpoint-mobile: 768px;
 @mixin responsiveTopMargin {
     margin-top: clamp(1.25rem, 2.347vw + 0.7rem, 2.813rem);
 }
+
+@mixin removeButtonBackground {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
