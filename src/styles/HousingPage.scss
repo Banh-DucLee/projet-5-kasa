@@ -1,0 +1,78 @@
+@import 'variables';
+
+@include mainLayoutStyle;
+
+.housing-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .housing-title {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h1 {
+            margin: 0;
+            color: $color-red;
+            font-weight: 500;
+            font-size: clamp(1.125rem, 1.69vw + 0.729rem, 2.25rem);
+        }
+
+        h2 {
+            margin: 0;
+            font-size: clamp(0.875rem, 0.376vw + 0.787rem, 1.125rem);
+            font-weight: 500;
+        }
+    }
+
+    .housing-host-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .housing-host {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            h3 {
+                margin: 0;
+                text-align: end;
+                text-indent: 5%;
+                color: $color-red;
+                font-weight: 500;
+                font-size: clamp(0.75rem, 0.563vw + 0.618rem, 1.125rem);
+            }
+
+            img {
+                aspect-ratio: 1;
+                border-radius: 50%;
+                width: clamp(2rem, 3.005vw + 1.296rem, 4rem);
+            }
+        }
+
+        @media (width <= $breakpoint-mobile) {
+            width: 100%;
+            flex-direction: row-reverse;
+            align-items: end;
+            justify-content: space-between;
+        }
+    }
+
+    @media (width <= $breakpoint-mobile) {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+.housing-collapse-container {
+    display: flex;
+    flex-direction: row wrap;
+    gap: 20px;
+    align-items: start;
+    justify-content: space-between;
+
+    @media (width <= $breakpoint-mobile) {
+        flex-wrap: wrap;
+    }
+}
