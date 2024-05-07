@@ -8,6 +8,7 @@
     .carrousel-image {
         aspect-ratio: 3;
         width: 100%;
+        height: auto;
         border-radius: 25px;
         overflow: hidden;
 
@@ -51,9 +52,9 @@
             & button {
                 @include removeButtonBackground;
                 height: 100%;
-                scale: 0.8;
 
                 & img {
+                    scale: 0.8;
                     @media (width <= $breakpoint-mobile) {
                         scale: 0.3;
                     }
@@ -62,14 +63,30 @@
 
             & .carrousel-control-button-previous {
                 transform: rotate(180deg);
-                &:hover {
-                    background-color: rgba(0,0,0,0.1);
+
+                @media (width <= $breakpoint-mobile) {
+                    & img {
+                        transform: translateX(100%);
+                    }
+                }
+
+                @media (width > $breakpoint-mobile) {
+                    &:hover {
+                        background-color: rgba(0,0,0,0.1);
+                    }
                 }
             }
             & .carrousel-control-button-next {
+                @media (width <= $breakpoint-mobile) {
+                    & img {
+                        transform: translateX(100%);
+                    }
+                }
 
-                &:hover {
-                    background-color: rgba(0,0,0,0.1);
+                @media (width > $breakpoint-mobile) {
+                    &:hover {
+                        background-color: rgba(0,0,0,0.1);
+                    }
                 }
             }
         }
