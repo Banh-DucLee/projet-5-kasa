@@ -21,9 +21,7 @@
         }
 
         .collapse-button {
-            border: none;
-            background: none;
-            cursor: pointer;
+            @include removeButtonBackground;
             transition: transform 0.3s ease;
     
             &.open {
