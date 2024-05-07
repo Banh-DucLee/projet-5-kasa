@@ -3,7 +3,7 @@
 .error-page {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 139px;
     align-items: center;
     height: clamp(38.938rem, 25.54vw + 32.952rem, 55.938rem);
@@ -40,7 +40,6 @@
     }
 
     @media (width <= $breakpoint-mobile) {
-        justify-content: center;
         gap: 113px;
     }
 }
