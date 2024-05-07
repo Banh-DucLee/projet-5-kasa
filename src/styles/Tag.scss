@@ -21,5 +21,9 @@
             font-size: clamp(0.625rem, 0.376vw + 0.537rem, 0.875rem);
             font-weight: 700;
         }
+
+        @media (width <= $breakpoint-mobile) {
+            border-radius: 5px;
+        }
     }
 }
