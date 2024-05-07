@@ -1,0 +1,66 @@
+@import 'variables';
+
+.collapse {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+
+    .collapse-header {
+        z-index: 1;
+        height: clamp(1.875rem, 2.066vw + 1.391rem, 3.25rem);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-red;
+        border-radius: 5px;
+        padding: 0 10px;
+
+        .collapse-title {
+            color: white;
+            font-size: clamp(0.813rem, 1.033vw + 0.57rem, 1.5rem);
+        }
+
+        .collapse-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+    
+            &.open {
+                transform: rotate(-180deg);
+            }
+
+            @media (width <= $breakpoint-mobile) {
+                transform: scale(80%);
+            }
+        }
+    }
+
+    .collapse-content {
+        z-index: -1;
+        height: 0;
+        width: 100%;
+        background-color: rgba(246, 246, 246, 0.45);
+        opacity: 0;
+        position: relative;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, height 0.3s ease-in-out;
+        transform: translateY(-50px);
+
+        p {
+            margin: 0;
+            padding: 16px;
+            font-size: 18px;
+        }
+
+        &.show {
+            opacity: 1;
+            transform: translateY(0);
+            height: auto;
+        }
+    }
+
+    @media (width <= $breakpoint-mobile) {
+        width: 100%;
+    }
+
+}
