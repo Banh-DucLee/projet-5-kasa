@@ -1,0 +1,10 @@
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.438rem, 0.282vw + 0.371rem, 0.625rem);
+    
+    img {
+        aspect-ratio: 1;
+        width: clamp(0.813rem, 1.033vw + 0.57rem, 1.5rem);
+    }
+}
