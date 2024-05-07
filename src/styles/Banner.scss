@@ -38,4 +38,8 @@
             text-align: start;
         }
     }
+
+    @media (width <= $breakpoint-mobile) {
+        border-radius: 10px;
+    }
 }

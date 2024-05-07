@@ -1,0 +1,89 @@
+Initialiser une web app React
+Le code du projet peut être validé si :
+
+❒ Le projet a été initialisé avec un bundler comme Create React App ou Vite.
+
+❒ L'étudiant n'a pas utilisé d'autre librairie externe que celles installées de base par Create React App, excepté React Router, et potentiellement des librairies de style (node-sass, styled-components, etc). 
+
+❒ Les différentes pages correspondent aux maquettes Figma.
+
+❒ L'application est responsive : une version mobile existe et correspond aux maquettes Figma.
+
+❒ L’étudiant a structuré les fichiers de son code en une architecture logique. 
+
+❒ Il n’y a ni erreur ni warning dans la console. 
+
+❒ Le principe "un composant par fichier" est bien respecté.
+
+❒ L’étudiant est capable d’expliquer l’initialisation d’une application React via un bundler (CRA, Vite...), et de justifier le choix de l’organisation des fichiers.
+
+ 
+Développer des éléments de l’interface d’un site web grâce à des composants React
+Le code du projet peut être validé si : 
+
+❒ Le composant Collapse se ferme et s'ouvre bien au clic de l'utilisateur. Les comportements précisés dans les contraintes fonctionnelles sont respectés.
+
+❒ Le composant Collapse est réutilisé entre la page À propos et la page Détails de l'appartement.
+
+❒ Le composant Gallery permet bien de faire défiler les images correspondant à un logement. Les comportements précisés dans les contraintes fonctionnelles sont respectés.
+
+❒ L'étudiant itère sur le JSON pour afficher les appartements correspondants. 
+
+❒ L’étudiant est capable d’expliquer le fonctionnement des composants, en particulier du carrousel et du Collapse.
+
+❒ L’étudiant est capable d’expliquer à quoi servent les props et le state dans une application React.
+
+ 
+Configurer la navigation entre les pages de l’application avec React Router
+Le code des routes présent dans le repo GitHub de l’application complète peut être validé si : 
+
+❒ Une page 404 est renvoyée pour chaque route inexistante.
+
+❒ La logique de routing est gérée dans un seul fichier.
+
+Le repo GitHub de l’application complète peut être validé si : 
+
+❒ Le composant de vue détaillée d'un appartement charge les informations de l'appartement correspondant, avec l'id de l'appartement passé en paramètre dans l'URL.
+
+❒ Les appartements sur la page d'accueil sont des liens cliquables gérés par React Router.
+
+❒ La page 404 est renvoyée si l'utilisateur modifie l'id de l'appartement dans l'URL et renseigne un id inexistant.
+
+❒ L’étudiant est capable d’expliquer le fonctionnement de la navigation entre les pages.
+
+ 
+
+Développer une interface web avec Sass
+(Seulement pour les étudiants du parcours Développeur Web. Ne peut faire l'objet d'un refus pour les étudiants du parcours Intégrateur Web)
+
+❒ Le code de l'interface est développé en utilisant Sass pour générer le style CSS.
+
+ 
+Mettre en oeuvre des animations CSS
+(Seulement pour les étudiants du parcours Développeur Web. Ne peut faire l'objet d'un refus pour les étudiants du parcours Intégrateur Web)
+
+❒ Les animations des éléments Collapses respectent le prototype fourni (rotation de la flèche et apparition progressive du contenu).
+
+ 
+
+Soutenance
+Barres titres
+ 
+
+Pour la structure de la soutenance, référez-vous à la section Soutenance du scénario du projet.
+
+ 
+
+Pendant la soutenance, pensez à poser les bonnes questions à l’étudiant afin de vérifier les critères suivants :
+
+Initialiser une web app React
+❒ L’étudiant est capable d’expliquer l’initialisation d’une application React via un bundler (CRA, Vite...), et de justifier le choix de l’organisation des fichiers.
+
+Développer des éléments de l’interface d’un site web grâce à des composants React
+
+❒ L’étudiant est capable d’expliquer le fonctionnement des composants, en particulier du carrousel et du Collapse.
+
+❒ L’étudiant est capable d’expliquer à quoi servent les props et le state dans une application React.
+
+Configurer la navigation entre les pages de l’application avec React Router
+❒ L’étudiant est capable d’expliquer le fonctionnement de la navigation entre les pages.
