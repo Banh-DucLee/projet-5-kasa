@@ -35,7 +35,7 @@ function HousingPage() {
             </div>
             <div className="housing-collapse-container">
                 <Collapse data={{title: "Description", description: housing.description}} />
-                <Collapse data={{title: "Équipements", description: <div dangerouslySetInnerHTML={ {__html: housing.equipments.join('<br />')} } />,}} />
+                <Collapse data={{title: "Équipements", description: <span dangerouslySetInnerHTML={ {__html: housing.equipments.join('<br />')} } />,}} />
             </div>
         </main>
     }
