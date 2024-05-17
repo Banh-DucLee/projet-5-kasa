@@ -23,7 +23,11 @@ function HousingPage() {
                 <div className="housing-title">
                     <h1>{housing.title}</h1>
                     <h2>{housing.location}</h2>
-                    <Tag tags={housing.tags} />
+                    <div className="tags-container">
+                        {housing.tags.map((tag) => (
+                            <Tag key={tag} tag={tag} />
+                        ))}
+                    </div>
                 </div>
                 <div className="housing-host-container">
                     <div className="housing-host">
